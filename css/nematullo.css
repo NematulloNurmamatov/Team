@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    position: fixed;
+    width: 100%;
+    background-color: #014E56;
+    padding: 20px;
+    z-index: 2222;
+}
+
+header .inner {
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header .inner .navigation nav ul li a {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+}
+
+header .inner .navigation nav ul li a:hover {
+    border-bottom: 1px solid #014E56;
+    transition: .5s;
+}
+
+header .inner .con {
+    display: flex;
+    align-items: center;
+}
+
+header .inner .con .sign {
+    margin-right: 30px;
+}
+
+header .inner .con .sign a {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0836be;
+}
+
+header .inner .con .button button {
+    all: unset;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 13px 40px;
+    border: 1px solid #fff;
+    color: white;
+    border-radius: 30px;
+}
+
+.navigation {
+    position: relative;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 60px;
+}
+
+.navigation ul li a {
+    position: relative;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    line-height: 1;
+    transition: 0.5s;
+}
+
+.navigation a::before {
+    content: "" attr(data-menu) "";
+    position: absolute;
+    z-index: 1;
+    color: #ffffff;
+    width: 0px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation a:hover::before {
+    width: 100%;
+}
+
+input#toggle-icon,
+.toggle-icon {
+    display: none;
+}
+
+
+
+/* main start */
+
+main {
+    /* background-color: #014E56; */
+    padding-top: 10px;
+    /* padding-bottom: 200px; */
+    /* height: auto; */
+}
+
+main .section1 {
+    color: white;
+    background-color: #014E56;
+    padding-top: 100px;
+}
+
+main .section1 .rasm img {
+    width: 100%;
+}
+
+main .section1 .s {
+    max-width: 1440px;
+    margin: auto;
+    width: 90%;
+    margin: auto;
+}
+
+main .section1 .s .bottom {
+    text-align: end;
+}
+
+main .section1 .sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-bottom: 140px;
+}
+
+main .section1 .sec1 .left {
+    width: 100%;
+}
+
+main .section1 .sec1 .right {
+    width: 100%;
+}
+
+main .section1 .sec1 .left h1 {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+}
+
+main .section1 .sec1 .right p {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+main .section1 .sec1 .right img {
+    margin-bottom: 50px;
+}
+
+
+main .section2 {
+    background-color: #012F34;
+    color: white;
+    margin-top: -8px;
+    display: flex;
+    position: relative;
+}
+
+main .section2 .sec2 {
+    max-width: 1440px;
+    width: 90%;
+    margin: auto;
+    padding-top: 140px;
+    padding-bottom: 100px;
+}
+
+main .section2 .sec2 .s2 .left .ciziq2 {
+    margin-bottom: 40px;
+}
+
+main .section2 .sec2 .s2 .left h1 {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+main .section2 .sec2 .s2 {
+    display: flex;
+    justify-content: space-between;
+}
+main .section2 .sec2 .s2 .right .ong {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+main .section2 .sec2 .s2 .right .ong img {
+    margin-right: 20px;
+}
+main .section2 .sec2 .s2 .right .ong h1 {
+}
+main .section2 .icon-right {
+    /* text-align: right; */
+    position: absolute;
+    /* align-items: end; */
+    right: 0;
+    bottom: 0;
+}
+
+
+
+@media (max-width: 1375px) {
+    main .section1 .s .sec1 .left h1 {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 1000px) {
+    main .section1 .s .sec1 .left h1 {
+        font-size: 70px;
+    }
+
+    main .section1 .s .sec1 .right p {
+        font-size: 16px;
+    }
+
+    main .section1 .s .sec1 .right img {
+        margin-bottom: 20px;
+    }
+
+    main .section1 .s .bottom img {
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 970px) {
+    header {
+        padding: 20px 50px;
+        padding-bottom: 40px;
+    }
+
+    header .inner .logo-wrap .logo2 {
+        margin-top: -10px;
+    }
+
+    header .inner .navigation nav ul li a {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #4F5665;
+    }
+
+    header .inner .navigation nav ul li a:hover {
+        border-bottom: 1px solid #014E56;
+        transition: .5s;
+    }
+
+    header .inner .con {
+        display: none;
+    }
+
+    .logo {
+        font-size: 38px;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 33px;
+        left: 0;
+        width: 100%;
+    }
+
+    .navigation ul li {
+        margin-left: 0px;
+        width: 100%;
+        background: #012F34;
+        padding-bottom: 5px;
+        animation: liAnim 0.5s 0ms ease-in forwards;
+        transform-origin: left;
+        opacity: 0;
+        transform: scaleY(0);
+    }
+
+    .navigation ul li:nth-child(1) {
+        animation-delay: 100ms;
+    }
+
+    .navigation ul li:nth-child(2) {
+        animation-delay: 300ms;
+    }
+
+    .navigation ul li:nth-child(3) {
+        animation-delay: 500ms;
+    }
+
+    .navigation ul li:nth-child(4) {
+        animation-delay: 700ms;
+    }
+
+    .navigation ul li:nth-child(5) {
+        animation-delay: 900ms;
+    }
+
+    .navigation ul li:nth-child(6) {
+        animation-delay: 1100ms;
+    }
+
+    @keyframes liAnim {
+        0% {
+            opacity: 0;
+            transform: scaleY(0);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .navigation a {
+        line-height: 1;
+        display: block;
+        color: white !important;
+        padding: 15px 10px;
+    }
+
+    .navigation nav {
+        display: none;
+    }
+
+    .toggle-icon {
+        display: block;
+    }
+
+    .toggle-icon {
+        position: fixed;
+        top: 6px;
+        right: 50px;
+        width: 55px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    /* hamburger css start */
+    .hamburger {
+        position: relative;
+        width: 60%;
+        height: 60%;
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .burger-1::before,
+    .burger-1::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .burger-1::before {
+        transform: translateY(-10px);
+    }
+
+    #toggle-icon:checked+.toggle-icon .burger-1::before {
+        transform: translateY(0) rotate(-315deg);
+    }
+
+    .burger-1::after {
+        transform: translateY(10px);
+        box-shadow: 0 -10px 0 black;
+    }
+
+    #toggle-icon:checked+.toggle-icon .burger-1::after {
+        transform: translateY(0) rotate(-45deg);
+        box-shadow: unset;
+    }
+
+    #toggle-icon:checked~nav {
+        display: block;
+    }
+}
+
+@media (max-width: 790px) {
+    main .section1 .s .sec1 .left h1 {
+        font-size: 60px;
+    }
+
+    main .section1 .s .sec1 .right p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 680px) {
+    main .section1 .s .sec1 {
+        flex-direction: column;
+    }
+
+    main .section1 .s .bottom img {
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 680px) {
+    main .section1 .s .bottom img {
+        width: 90%;
+    }
+}
