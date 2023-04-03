@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samariddin Nurmamatov</title>
+  <link rel="icon" href="./2023-02-22 22.45.06.jpg">
+  <link rel="stylesheet" href="./css/samariddin.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="inner container">
+      <div class="logo-wrap">
+        <a href="#" class="logo2" data-menu="Chat with us"> <img src="./img/myteam.png" alt=""></a>
+      </div>
+      <div class="navigation">
+        <input type="checkbox" id="toggle-icon">
+        <label for="toggle-icon" class="toggle-icon">
+          <div class="hamburger burger-1"></div>
+        </label>
+        <nav>
+          <ul>
+            <li>
+              <a href="#" data-menu="home">home</a>
+            </li>
+            <li>
+              <a href="#" data-menu="about">about</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="con">
+        <div class="button">
+          <button>contact us</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section1">
+      <div class="flex container">
+        <div class="left">
+          <h1>Contact</h1>
+          <p>Ask us about</p>
+          <div class="lf">
+            <div class="ong">
+              <div>
+                <img src="./img/icon-experienced.png" alt="">
+              </div>
+              <div>
+                <p style="color: white; font-size: 18px;">The quality of our talent network
+                </p>
+              </div>
+            </div>
+            <div class="ong">
+              <div>
+                <img src="./img/icon-gear.png" alt="">
+              </div>
+              <div>
+                <p style="color: white; font-size: 18px;">Usage & implementation of our software</p>
+              </div>
+            </div>
+            <div class="ong">
+              <div>
+                <img src="./img/icon-stat.png" alt="">
+              </div>
+              <div>
+                <p style="color: white; font-size: 18px;">How we help drive innovation
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <form>
+            <div class="user-box">
+              <input class="namee" type="text" name="email" required>
+              <label>Name *</label>
+            </div><br>
+            <div class="user-box">
+              <input type="email" required />
+              <label>Email Address *</label>
+            </div><br>
+            <div class="user-box">
+              <input type="text" required />
+              <label>Company Name *</label>
+            </div><br>
+            <div class="user-box">
+              <input type="text" required />
+              <label>Title *</label>
+            </div><br>
+            <div class="user-box">
+              <textarea name="Text" id="" cols="30" rows="5"></textarea>
+            </div>
+            <span class="span-message"></span><br>
+            <button type="submit" class="nav-btn2">Continue</button>
+          </form>
+        </div>
+      </div>
+      <img class="m" src="./img/Group 7.png" alt="">
+    </section>
+    <footer>
+      <div class="sec5 container">
+        <div class="bir">
+          <img src="./img/myteam.svg" alt="">
+          <div class="bir1">
+            <div>
+              <a href="#">home</a>
+            </div>
+            <div class="i">
+              <a href="#">about</a>
+            </div>
+          </div>
+        </div>
+        <div class="on">
+          <div class="ikki">
+            <p>987 Hillcrest Lane</p>
+            <p>Irvine, CA</p>
+            <p>California 92714</p>
+            <p>Call Us : 949-833-7432</p>
+          </div>
+          <div class="uch">
+            <div class="end">
+              <div class="img">
+                <img src="./img/facebook.png" alt="">
+              </div>
+              <div class="img">
+                <img src="./img/ras2.png" alt="">
+              </div>
+              <div>
+                <img src="./img/twitter.png" alt="">
+              </div>
+            </div>
+            <p>Copyright 2020. All Rights Reserved</p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </main>
+
+  <script src="./script.js">
+
+    const btn = document.querySelector(".nav-btn2");
+    const namee = document.querySelector(".namee");
+    const message = document.querySelector(".span-message");
+
+    let data = [];
+
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (namee.value) {
+        // window.location.href = "./signup.html";  
+      } else {
+        message.innerHTML = `
+    <span>Iltimos Malmotlarni tuliq tuldiring 🤔</span>
+    `
+        setInterval(() => {
+          message.innerHTML = `
+        <span> </span>
+        `
+        }, 4300)
+
+      }
+    })
+  </script>
+</body>
+
+</html>
