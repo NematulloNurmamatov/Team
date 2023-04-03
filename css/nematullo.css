@@ -352,7 +352,7 @@ main .section4 .sec4 h1 {
 main .section4 .sec4 button {
     all: unset;
     cursor: pointer;
-    padding: 15px 40px;
+    padding: 10px 25px;
     background-color: transparent;
     border-radius: 25px;
     color: #012F34;
