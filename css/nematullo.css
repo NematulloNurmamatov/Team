@@ -21,6 +21,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 header {
     position: relative;
     position: fixed;
@@ -28,6 +29,7 @@ header {
     background-color: #014E56;
     padding: 20px;
     z-index: 2222;
+    box-shadow: 0px 1px 10px 2px #012f34a8;
 
 }
 
@@ -251,6 +253,7 @@ main .section2 .icon-right {
     position: absolute;
     right: 0;
     bottom: 0;
+
 }
 
 main .section3 {
@@ -388,15 +391,17 @@ footer {
     margin-top: -7px;
     padding: 40px 0px;
 }
+
 footer .sec5 {
     max-width: 1440px;
     margin: auto;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    /* justify-content: space-between; */
     width: 97%;
     margin: auto;
 }
+
 footer .sec5 .bir .bir1 {
     display: flex;
     margin-top: 25px;
@@ -406,7 +411,7 @@ footer .sec5 .bir .bir1 a {
     transition: .5s;
 }
 
-footer .sec5 .bir .bir1 a:hover{
+footer .sec5 .bir .bir1 a:hover {
     color: gray;
 }
 
@@ -425,8 +430,26 @@ footer .sec5 .ikki p:hover {
     color: grey;
 }
 
-footer .sec5 .uch {
+footer .sec5 .uch .end {
     display: flex;
+    justify-content: right;
+    margin-bottom: 40px;
+}
+
+footer .sec5 .uch p {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: right;
+    color: #FFFFFF;
+}
+footer .sec5 .on {
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 footer .sec5 .uch .img {
@@ -449,11 +472,20 @@ footer .sec5 .uch img:hover {
 }
 
 @media (max-width: 1111px) {
-    main .section2 .sec2 .s2 .left h1  {
+    main .section2 .sec2 .s2 .left h1 {
         font-size: 38px;
     }
+
     main .section2 .icon-right img {
         width: 70%;
+    }
+
+    main .section3 .rassm img {
+        width: 15%;
+    }
+
+    main .section3 .rassm2 img {
+        width: 15%;
     }
 }
 
@@ -461,9 +493,11 @@ footer .sec5 .uch img:hover {
     main .section2 .sec2 .s2 {
         flex-direction: column;
     }
+
     main .section2 .sec2 .s2 .right .ong {
         justify-content: center;
     }
+
     main .section2 .sec2 .s2 .left {
         text-align: center;
         margin-bottom: 50px;
@@ -486,6 +520,7 @@ footer .sec5 .uch img:hover {
     main .section1 .s .bottom img {
         width: 40%;
     }
+
     main .section3 .sec3 h1 {
         width: 90%;
         margin: auto;
@@ -495,8 +530,8 @@ footer .sec5 .uch img:hover {
 
 @media (max-width: 970px) {
     header {
-        padding: 20px 50px;
-        padding-bottom: 40px;
+        padding: 40px 50px;
+        padding-bottom: 10px;
     }
 
     header .inner .logo-wrap .logo2 {
@@ -616,7 +651,8 @@ footer .sec5 .uch img:hover {
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        overflow: hidden;
+        /* overflow: hidden; */
+        padding-top: 30px;
     }
 
     .burger-1::before,
@@ -663,13 +699,31 @@ footer .sec5 .uch img:hover {
     }
 }
 
+@media (max-width: 717px) {
+    main .section3 .rassm img {
+        width: 20%;
+    }
+
+    main .section3 .rassm2 img {
+        width: 20%;
+    }
+}
+
 @media (max-width: 750px) {
     main .section3 .sec3 .uch {
         flex-direction: column;
     }
+
     main .section3 .sec3 .uch .one {
         width: 50%;
         margin: auto;
+    }
+    footer .sec5 {
+      flex-direction: column;
+    }
+    footer .sec5 .on {
+        margin-left: -1px;
+        margin-top: 40px;
     }
 }
 
@@ -683,7 +737,6 @@ footer .sec5 .uch img:hover {
     }
 }
 
-
 @media (max-width: 680px) {
     main .section1 .s .bottom img {
         width: 90%;
@@ -695,6 +748,7 @@ footer .sec5 .uch img:hover {
         width: 70%;
         margin: auto;
     }
+
     main .section4 .sec4 .left h1 {
         font-size: 38px;
     }
@@ -704,6 +758,7 @@ footer .sec5 .uch img:hover {
     main .section4 .sec4 {
         flex-direction: column;
     }
+
     main .section4 .sec4 h1 {
         margin-bottom: 20px;
         text-align: center;
@@ -721,6 +776,7 @@ footer .sec5 .uch img:hover {
         flex-direction: column;
         text-align: center;
     }
+
     footer .sec5 .bir .bir1 {
         justify-content: center;
     }
@@ -732,6 +788,30 @@ footer .sec5 .uch img:hover {
     footer .sec5 .ikki {
         margin-bottom: 20px;
     }
+}
+
+@media (max-width: 515px) {
+    main .section3 .rassm img {
+        width: 25%;
+    }
+
+    main .section3 .rassm2 img {
+        width: 25%;
+    }
+}
+
+@media (max-width: 505px) {
+    footer .sec5 .on {
+        flex-direction: column;
+    }
+    footer .sec5 .on .uch .end {
+        text-align: center;
+        justify-content: center;
+    }
+    footer .sec5 .on .uch p {
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 494px) {
@@ -750,5 +830,25 @@ footer .sec5 .uch img:hover {
 @media (max-width: 430px) {
     main .section3 .sec3 h1 {
         font-size: 28px;
+    }
+}
+
+@media (max-width: 414px) {
+    main .section3 .rassm img {
+        width: 30%;
+    }
+
+    main .section3 .rassm2 img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 313px) {
+    main .section3 .rassm img {
+        width: 35%;
+    }
+
+    main .section3 .rassm2 img {
+        width: 35%;
     }
 }
