@@ -72,10 +72,10 @@ header .inner .con .button button:hover {
 
 
 }
+
 header .inner .con .button button a {
     transition: .5s;
 }
-
 
 .navigation {
     position: relative;
@@ -352,7 +352,7 @@ main .section4 .sec4 h1 {
 main .section4 .sec4 button {
     all: unset;
     cursor: pointer;
-    padding: 15px 40px;
+    padding: 10px 25px;
     background-color: transparent;
     border-radius: 25px;
     color: #012F34;
@@ -403,7 +403,6 @@ footer .sec5 .bir .bir1 .i {
     margin-left: 30px;
 }
 
-
 footer .sec5 .ikki p {
     color: rgb(223, 219, 219);
     cursor: pointer;
@@ -429,6 +428,7 @@ footer .sec5 .uch p {
     text-align: right;
     color: #FFFFFF;
 }
+
 footer .sec5 .on {
     margin-left: 100px;
     display: flex;
@@ -447,12 +447,218 @@ footer .sec5 .uch img:hover {
 
 
 
+main .about1 {
+    position: relative;
+    background-color: #014E56;
+    color: white;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+main .about1 .about11 .red img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 5%;
+}
+
+main .about1 .about11 {
+    display: flex;
+    max-width: 1110px;
+    margin: auto;
+}
+
+main .about1 .about11 .left {
+    width: 100%;
+}
+
+main .about1 .about11 .left h1 {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100px;
+}
+
+main .about1 .about11 .right img {
+    margin-bottom: 40px;
+}
+
+main .about1 .about11 .right p {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+
+.about3 {
+    background-color: #012F34;
+    padding-bottom: 150px;
+}
+
+main .about3 .about333 img {
+    width: 10%;
+}
+
+main .about3 h1 {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+main .about3 .about33 {
+    max-width: 1110px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+main .about3 .about33 img {
+    width: 100%;
+}
+
+main .about3 .about33 img:hover {
+    box-shadow: 0px 0px 10px 5px #004047;
+}
+
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Section1 start */
+.sectio {
+    padding-top: 190px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 110px;
+    background-color: #004047;
+    position: relative;
+}
+
+.sectio .m {
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+    width: 75px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 25px;
+    padding: 40px 0;
+    width: 94%;
+}
+
+.heading {
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    /* identical to box height, or 100% */
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.cards .card {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cards .card .live {
+    position: absolute;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 10px;
+    width: 80%;
+    color: white;
+    bottom: -80%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.7s;
+}
+
+.card .car {
+    width: 100%;
+    height: 253px;
+    padding: 35px 0px;
+    background-color: #012f34;
+}
+
+.card .car:hover~.live {
+    bottom: 20%;
+    display: block;
+    z-index: 900;
+}
+
+.card .car:hover {
+    filter: brightness(5%);
+    z-index: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1375px) {
     main .section1 .s .sec1 .left h1 {
         font-size: 80px;
     }
+}
+
+@media (max-width: 1222px) {
+    main .about1 .about11 {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    main .about3 .about33 {
+        width: 90%;
+        margin: auto;
+    }
+
+    main .about3 .about33 div {
+        margin: 10px;
+    }
+
 }
 
 @media (max-width: 1111px) {
@@ -486,6 +692,14 @@ footer .sec5 .uch img:hover {
         text-align: center;
         margin-bottom: 50px;
     }
+}
+
+@media (max-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(2, 45%);
+    }
+
+
 }
 
 @media (max-width: 1000px) {
@@ -660,17 +874,45 @@ footer .sec5 .uch img:hover {
 
     .burger-1::after {
         transform: translateY(10px);
-        box-shadow: 0 -10px 0 black;
+        /* box-shadow: 0 -10px 0 black; */
     }
 
     #toggle-icon:checked+.toggle-icon .burger-1::after {
         transform: translateY(0) rotate(-45deg);
-        box-shadow: unset;
+        /* box-shadow: unset; */
     }
 
     #toggle-icon:checked~nav {
         display: block;
     }
+}
+
+@media (max-width: 950px) {
+    main .about3 .about333 img {
+        width: 15%;
+    }
+
+    main .about1 .about11 .red img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 7%;
+    }
+
+}
+
+@media (max-width: 878px) {
+    main .about1 .about11 .left {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    main .about3 .about33 {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
 }
 
 @media (max-width: 790px) {
@@ -691,6 +933,13 @@ footer .sec5 .uch img:hover {
     main .section3 .rassm2 img {
         width: 20%;
     }
+
+    main .about1 .about11 .red img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 10%;
+    }
 }
 
 @media (max-width: 750px) {
@@ -702,9 +951,11 @@ footer .sec5 .uch img:hover {
         width: 50%;
         margin: auto;
     }
+
     footer .sec5 {
-      flex-direction: column;
+        flex-direction: column;
     }
+
     footer .sec5 .on {
         margin-left: -1px;
         margin-top: 40px;
@@ -719,12 +970,32 @@ footer .sec5 .uch img:hover {
     main .section1 .s .bottom img {
         width: 70%;
     }
+
+    main .about1 .about11 {
+        flex-direction: column;
+        /* margin-right: 50px; */
+
+    }
 }
 
 @media (max-width: 680px) {
     main .section1 .s .bottom img {
         width: 90%;
     }
+}
+
+@media (max-width:768px) {
+
+
+    .cards {
+        grid-template-columns: repeat(1, 90%);
+    }
+
+    footer .links {
+        grid-template-columns: repeat(2, 49%);
+        gap: 30px;
+    }
+
 }
 
 @media (max-width: 750px) {
@@ -788,10 +1059,12 @@ footer .sec5 .uch img:hover {
     footer .sec5 .on {
         flex-direction: column;
     }
+
     footer .sec5 .on .uch .end {
         text-align: center;
         justify-content: center;
     }
+
     footer .sec5 .on .uch p {
         text-align: center;
     }
@@ -801,6 +1074,13 @@ footer .sec5 .uch img:hover {
 @media (max-width: 494px) {
     main .section3 .sec3 h1 {
         font-size: 33px;
+    }
+
+    main .about1 .about11 .red img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 12%;
     }
 }
 
@@ -825,6 +1105,13 @@ footer .sec5 .uch img:hover {
     main .section3 .rassm2 img {
         width: 30%;
     }
+
+    main .about1 .about11 .red img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 15%;
+    }
 }
 
 @media (max-width: 313px) {
@@ -834,5 +1121,12 @@ footer .sec5 .uch img:hover {
 
     main .section3 .rassm2 img {
         width: 35%;
+    }
+
+    main .about1 .about11 .red img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 17%;
     }
 }
